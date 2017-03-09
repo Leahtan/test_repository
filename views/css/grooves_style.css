@@ -1,0 +1,324 @@
+﻿* {
+    /*outline: 1px solid red;*/
+}
+
+BODY {font-family:"Trebuchet MS", Helvetica, sans-serif;
+      font-size:16px;
+      background-image:url("../../img/grooveback_3.jpg");
+     /*background-size:100%;*/ 
+      background-attachment:fixed;
+      background-position:left bottom;
+      background-size:cover;
+      color:#fafafa;
+      margin:0px;
+}
+
+
+.global_width {
+    width:1300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.tbl {
+        display:table
+        }
+.rw {
+    display:table-row
+}
+.cl {
+    display:table-cell;
+}
+li {
+    margin-bottom:7px;
+}
+
+#header{height:50px;
+        background-image:url("../../img/shader.png");
+        vertical-align:middle;
+        margin-bottom:15px;
+        }
+
+#header_table {
+    height:50px;
+  
+}
+
+#logo {cursor:pointer;
+       font-size:30px;
+       font-weight:bolder;
+       height:100%;
+      /*background-color:burlywood;*/
+       vertical-align:middle;
+       width:275px;
+       line-height:50px;
+}
+#header_title {
+               font-size:16px;
+               height:100%;
+               width:335px;
+               vertical-align:middle;
+                /*background-color:aquamarine;*/
+        }
+#header_center {
+               font-size:16px;
+               height:100%;
+               width:330px;
+               vertical-align:middle;
+                 /*background-color:burlywood;*/
+        }
+
+#now_playing {font-size:12px;
+             text-align:center;
+                }
+
+#now_playing_title {font-size:20px;
+                    text-align:center;
+                    }
+
+#header_right {
+               font-size:16px;
+               height:100%;
+               vertical-align:middle;
+               width:360px;
+               text-align:right;
+               /*background-color:blueviolet;*/
+        }
+
+.header_link {
+    padding-left:12px;
+    cursor:pointer;
+}  
+
+.header_link:hover {
+                /*background-color:#0779f5;*/
+                color:#4f775e;
+                }
+   
+#main_table { width:100%;
+              visibility:hidden;
+              display:table;
+              border-collapse:separate;
+              border-spacing:3px 0px;
+            }
+
+.main_three {
+            display:table-cell;
+            border-radius:10px;
+            /*background-image:url("../../img/shader.png");*/
+            }
+#left_col {
+            width:250px;
+            vertical-align:top;
+           } 
+
+#center_cell{
+            width:690px;
+            vertical-align:top;
+            padding-left:4px;
+            }
+
+#cell_three{width:auto;
+            vertical-align:top;
+             padding-left:4px;
+           }
+
+
+
+.left_nav {cursor:pointer;
+            text-transform:capitalize;
+            border-radius:5px;
+            font-size:18px;
+            font-weight:normal;
+            background-color:transparent;
+            margin-bottom:5px;
+            padding-left:7px;
+}
+        
+.left_nav:hover {
+                background-color:#4f775e;
+                /*color:#05a8fb;4f775e*/
+                }
+                
+.link_list {
+        display:none;
+        border-radius:5px;
+        margin-bottom:5px;
+        }
+        
+#turntable {visibility:visible}
+
+.g_header {
+    font-weight:normal;
+            font-size:25px;
+            text-transform:capitalize;
+            margin:-3px 0px 5px 0px;
+            padding:0px;
+}
+
+
+#song_name {
+            display:inline-block;
+            width:300px;
+                 }
+
+#charts_header {
+    border-top:1px solid white;
+}
+
+.chart {display:none;
+}
+                 
+#down_link,.chart_link{
+            text-decoration:none;
+            visibility:visible;
+            font-size:16px;
+            font-weight:bold;
+            margin-bottom:50px;
+            background-image:url("http://67.199.62.170/grooves/img/shader.png");
+
+}
+
+#down_link:hover{color:#4f775e;}     
+.chart_link:hover{color:#4f775e;}     
+
+
+a {color:#fafafa;
+   font-weight:bold;} 
+
+.audio_cntrl{font-size:20px;
+             font-weight:bold;
+             margin-right:7px;
+             cursor:pointer;
+             -webkit-user-select: none; /* Webkit */
+            -moz-user-select: none;    /* Firefox */
+            -ms-user-select: none;     /* IE 10  */
+            /* Currently not supported in Opera but will be soon */
+            -o-user-select: none;
+            user-select: none;
+            }
+             
+.audio_cntrl:hover {
+                color:#4f775e;
+                }
+                
+
+
+#play_pause {width:60px;
+             display:inline-block;
+             margin-left:7px;
+}
+
+
+
+
+
+#player_table {
+    display:inline-table;
+    background-image:url("../../img/shader.png");
+    border:1px solid #4f775e;
+    border-radius: 5px;
+    float:right;
+    height:30px;
+}
+#player_cell {
+    padding:0px 0px 0px 0px;
+}
+
+P {padding:0px;
+   margin:0px 0px 7px 0px;
+}
+
+/* ------------------------------   FOR 1336 x 768 and below ----------------------------------------*/
+@media (max-width: 1366px) {
+    BODY {
+        font-size: 12px;
+    }
+
+/*------------------header*/
+    #header{
+        height:35px;
+        }
+
+    #header_table {
+    height:35px;
+  }
+
+    #logo {
+        cursor: pointer;
+        font-size: 21px;
+        line-height:35px;
+    }
+
+    #header_title {
+               width:236px;
+                /*background-color:aquamarine;*/
+        }
+
+    #header_center {
+                width:220px;
+                    /*background-color:burlywood;*/
+        }
+
+    #header_right {
+        font-size:14px;
+        width:280px;
+    }
+/*------------------END header*/
+
+/*-----------------main table*/
+
+#left_col {
+            width:174px;
+           } 
+
+#center_cell{
+            width:480px;
+
+            }
+
+/*-----------------END main table*/
+
+    #now_playing {
+        font-size: 10px;
+    }
+
+    #now_playing_title {
+        font-size: 18px;
+    }
+
+    .left_nav {
+        font-size: 13px;
+    }
+
+    .g_header {
+        font-size: 18px;
+    }
+
+
+
+    #down_link, .chart_link {
+        font-size: 12px;
+    }
+
+    #header{
+        height:35px;
+        }
+    #header_table {
+    height:35px;
+  }
+
+    #player_table {
+            height:21px;
+            max-height:21px;
+            }
+
+    .audio_cntrl{
+        font-size:15px; 
+            }
+
+    .global_width {
+    width:1000px;
+    }
+
+}
